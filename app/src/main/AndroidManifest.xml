@@ -11,16 +11,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
-                <!-- Accepts URIs that begin with "https://github.com/pavilandoangelo/hello-world” -->
-                <data android:scheme="https"
-                    android:host="https://github.com"
-                    android:pathPrefix="/pavilandoangelo/hello-world" />
-                <!-- note that the leading "/" is required for pathPrefix-->
             </intent-filter>
         </activity>
     </application>
