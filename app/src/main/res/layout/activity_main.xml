@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ad00.randaround.MainActivity">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:background="@drawable/back_drop"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="0" />
+    <TextView
+        android:id="@+id/textRand"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="180sp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/hit_start" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <Button
+            android:id="@+id/oddBtn"
+            style="@style/textEvenOdd"
+            android:text="@string/odd_text" />
+
+        <Button
+            android:id="@+id/startRandBtn"
+            style="@style/textStartRand"
+            android:text="@string/start_rand" />
+
+        <Button
+            android:id="@+id/evenBtn"
+            style="@style/textEvenOdd"
+            android:text="@string/even_text"/>
+
+    </LinearLayout>
+
+</LinearLayout>
